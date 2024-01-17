@@ -2,10 +2,10 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
   ],
   prefix: "",
   theme: {
@@ -23,6 +23,24 @@ module.exports = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        // Gray
+        gray900: "hsl(var(--gray-900))",
+        gray600: "hsl(var(--gray-600))",
+        gray500: "hsl(var(--gray-500))",
+        // Gray/Blue
+        grayBlue: "hsl(var(--gray-blue-500))",
+        // Blue
+        blue900: "hsl(var(--blue-900))",
+        blue800: "hsl(var(--blue-800))",
+        blue700: "hsl(var(--blue-700))",
+        blue600: "hsl(var(--blue-600))",
+        blue500: "hsl(var(--blue-500))",
+        // White
+        white500: "hsl(var(--white-500))",
+        // Green
+        green500: "hsl(var(--green-500))",
+        // Red
+        red300: "hsl(var(--red-300))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -74,4 +92,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};

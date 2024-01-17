@@ -4,34 +4,25 @@
 
 :root {
   /* Gray */
-  --gray-900: 0, 0, 20;
-  --gray-600: 0, 0, 70;
-  --gray-500: 0, 0, 80;
-  --gray-500: 0, 0, 80;
+  --gray-900: 0, 0%, 20%;
+  --gray-600: 0, 0%, 70%;
+  --gray-500: 0, 0%, 80%;
   /* Gray/Blue */
-  --gray-blue-500: 204, 35, 37;
+  --gray-blue-500: 204, 35%, 37%;
   /* Blue */
-  --blue-900: 205, 100, 24;
-  --blue-700: 204, 98, 41;
-  --blue-600: 205, 100, 51;
-  --blue-500: 205, 98, 64;
+  --blue-900: 205, 100%, 24%;
+  --blue-700: 204, 98%, 41%;
+  --blue-600: 205, 100%, 51%;
+  --blue-500: 205, 98%, 64%;
   /* White */
-  --white-500: 0, 0, 98;
+  --white-500: 0, 0%, 98%;
   /* Green */
-  --green-500: 133, 98, 64;
+  --green-500: 133, 98%, 64%;
   /* Red */
-  --red-300: 0, 98, 64;
+  --red-300: 0, 98%, 64%;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */
-
 body {
-  color: var(--gray-900);
-  background: var(--white-500);
+  color: rgb(var(--gray-900));
+  background: rgb(var(--white-500));
 }
