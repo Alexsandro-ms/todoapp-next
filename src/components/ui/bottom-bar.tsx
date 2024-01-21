@@ -43,6 +43,7 @@ const BottomBar = () => {
         <AvatarFallback>{data?.user?.name?.[0]?.toUpperCase()}</AvatarFallback>
         {data?.user?.image && <AvatarImage src={data.user.image} />}
       </Avatar>
+      <button onClick={handleSignOutClick}>Sair</button>
     </div>
   );
 };
