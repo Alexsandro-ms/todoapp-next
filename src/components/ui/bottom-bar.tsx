@@ -40,10 +40,15 @@ const BottomBar = () => {
         </Link>
       </Button>
       <Avatar>
-        <AvatarFallback>{data?.user?.name?.[0]?.toUpperCase()}</AvatarFallback>
+        {data?.user ? (
+      <button onClick={handleSignOutClick}>Sair</button>
+      ) : (
+        <button onClick={handleLoginClick}>Entrar</button>
+      )
+    }
+      <AvatarFallback>{data?.user?.name?.[0]?.toUpperCase()}</AvatarFallback>
         {data?.user?.image && <AvatarImage src={data.user.image} />}
       </Avatar>
-      <button onClick={handleSignOutClick}>Sair</button>
     </div>
   );
 };
